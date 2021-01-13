@@ -1,7 +1,7 @@
 /* Node.js Server for RC522 RFID Reader using NodeMCU ESP8266 and Arduino Uno R3
  *
  * Created by Mekel Ilyasa
- * Source available at https://github.com/retr00exe/nodejs-rfid-reader
+ * Source available at https://github.com/retr00exe/rfid-esp8266
  *
  */
 
@@ -16,9 +16,9 @@
 boolean handshakeFailed = 0;
 String data = "";
 char PATH[] = "/";
-const char* SSID = "n0psledbyte";
-const char* PASSWORD = "password12345";
-char* HOST = "192.168.100.3";
+const char* SSID = "ssid";          // Enter your SSID name
+const char* PASSWORD = "password";  // Enter your SSID password
+char* HOST = "192.168.100.3";       // Enter your server IP Adress
 const int PORT = 4000;
 
 WebSocketClient webSocketClient;
